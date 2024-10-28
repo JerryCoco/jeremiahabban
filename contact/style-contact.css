@@ -31,10 +31,10 @@ textarea {
 .container-contact {
   margin-top:110px;
   margin-bottom:150px;
-  margin-left:170px;
+  margin-left:190px;
   margin-right:10px;
   position: relative;
-  padding: 1.5rem;
+  padding: 2rem;
   overflow: hidden;
   display: flex,;
   align-items: center;
@@ -66,7 +66,7 @@ textarea {
   background-color: #70AAF1;
   transform: rotate(45deg);
   top: 50px;
-  left: -12px;
+  left: -13px;
 }
 
 form {
@@ -278,16 +278,6 @@ textarea.input {
   opacity: 0.2;
 }
 
-@media (max-width: 1024px) {
-  .container-contact {
-    flex-direction: column;
-  }
-
-  .contact-info, .contact-form {
-    margin-bottom: 2rem;
-  }
-}
-
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -296,10 +286,10 @@ textarea.input {
   .container-contact {
     margin-top:110px;
     margin-bottom:150px;
-    margin-left:40px;
-    margin-right:10px;
+    margin-left:3px;
+    margin-right:1px;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
     overflow: hidden;
     display: flex,;
     align-items: center;
@@ -379,4 +369,3 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
-
