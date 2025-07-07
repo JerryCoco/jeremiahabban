@@ -65,6 +65,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
 }
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -74,18 +75,17 @@ body {
   z-index: 20;
   display: flex;
   justify-content: center;
-  background: var(--bg-primary);
+  background: #ffffff;
 }
 
 .navbar .container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Changed from space-between to center */
+  justify-content: space-between;
   height: 80px;
   width: 100%;
   max-width: 1200px;
   padding: 0 20px;
-  position: relative; /* Added for positioning */
 }
 
 .nav-menu {
@@ -94,59 +94,46 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  background: var(--bg-primary);
+  justify-content: center; 
+  align-items: center; 
+  list-style-type: none; 
+  margin: 150px; 
+}
+  
 .nav-menu li {
-  margin: 0 15px;
+  margin: 0 15px; 
+}
+  
+.nav-menu a {
+  text-decoration: none;
 }
 
-.nav-link {
+.navbar .nav-link {
+  margin: 0 1rem;
   font-size: 0.9rem;
   font-weight: var(--weight-semibold);
-  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #A0D4FF;
-}
-
-/* Logo and button positioning */
-.navbar #logo {
-  margin-right: auto; /* Pushes logo to the left */
-}
-
-.navbar .btn {
-  margin-left: auto; /* Pushes button to the right */
-}
-
-/* For mobile menu */
-@media (max-width: 768px) {
-  .navbar .container {
-    justify-content: space-between;
-  }
-  
-  .nav-menu {
-    position: fixed;
-    right: -100vw;
-    top: 80px;
-    flex-direction: column;
-    background: var(--bg-primary);
-    width: 100%;
-    max-width: 300px;
-    transition: 0.3s;
-    box-shadow: var(--shadow);
-    padding: 2rem;
-    align-items: flex-start;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-menu li {
-    margin: 0.5rem 0;
-    width: 100%;
-  }
+  color:#A0D4FF;
 }
 
 .about-me{
@@ -700,4 +687,3 @@ body {
 }
 
 }
-
